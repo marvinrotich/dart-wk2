@@ -1,0 +1,51 @@
+// Task 1
+int addTwo(int a, int b) {
+  return a + b;
+}
+
+// Task 2
+int subtractTwo(int a, int b) {
+  return a - b;
+}
+
+// Task 3
+int multiplyTwo(int a, int b) {
+  return a * b;
+}
+
+// Task 4
+double divideTwo(double a, double b) {
+  // Ensure that the denominator is not zero before performing the division
+  if (b != 0) {
+    return a / b;
+  } else {
+    print("Error: Cannot divide by zero.");
+    return double.infinity; // Return infinity to indicate an error
+  }
+}
+
+// Task 5
+int stringLength(String str) {
+  return str.length;
+}
+
+// Task 6
+dynamic getFirstElement(List<dynamic> list) {
+  // Check if the list is not empty before accessing the first element
+  if (list.isNotEmpty) {
+    return list[0];
+  } else {
+    print("Error: The list is empty.");
+    return null; // Return null to indicate an error
+  }
+}
+
+void main() 
+  // Testing the functions
+  print("Task 1: ${addTwo(3, 5)}"); // Output: 8
+  print("Task 2: ${subtractTwo(8, 3)}"); // Output: 5
+  print("Task 3: ${multiplyTwo(4, 7)}"); // Output: 28
+  print("Task 4: ${divideTwo(10, 2)}"); // Output: 5.0
+  print("Task 5: ${stringLength("Dart is fun!")"); // Output: 13
+  print("Task 6: ${getFirstElement([1, 2, 3])}"); // Output: 1
+}
